@@ -1,0 +1,83 @@
+/* App.css */
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.inputContainer,
+.outputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Set max width for the form */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add space between form and output */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input_field {
+  margin-bottom: 20px;
+}
+
+.input_field label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input_field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input_field input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button[name="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[name="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding: 10px;
+  }
+
+  .inputContainer,
+  .outputContainer {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+/* NavBar.css */
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+#navEl,
+#InputForm,
+#Weather {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#navEl:hover,
+#InputForm:hover,
+#Weather:hover {
+  background-color: #333;
+  color: #ffcc00;
+}
+
+#navEl:active,
+#InputForm:active,
+#Weather:active {
+  background-color: #555;
+  color: #ffffff;
+}
+
+#navEl,
+#InputForm,
+#Weather {
+  transition: background-color 0.3s, color 0.3s;
+}
